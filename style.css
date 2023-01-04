@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0c0c0c;
+}
+:root{
+    --theme-color: #3498db;
+}
+.container{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.card{
+    width: 320px;
+    height: 350px;
+    background: linear-gradient(
+        to bottom,
+        var(--theme-color) 110px,
+        #161616 110px
+    );
+    border-radius: 10px;
+    padding: 50px 0;
+}
+.card *{
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 600px;
+}
+img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.card h4{
+    color: #d7d7d7;
+    font-weight: 500px;
+    font-size: 15px;
+}
+.card h5{
+    color: #d7d7d7;
+    font-weight: 400px;
+    font-size: 14px;
+}
+.info{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.info h2{
+    font-weight: 400px;
+    color: #d7d7d7;
+}
+.info span{
+    color: var(--theme-color);
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.btn button{
+    width: 130px;
+    padding: 9px 0;
+    border-radius: 25px;
+    border: 2px solid var(--theme-color);
+}
+.btn button:first-child{
+    background-color: var(--theme-color);
+    color: #fff;
+    transition: 0.5s ease;
+}
+.btn button:first-child:hover{
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+.btn button:last-child{
+    background-color: transparent;
+    color: var(--theme-color);
+    transition: 0.5s ease;
+}
+.btn button:last-child:hover{
+    background-color: var(--theme-color);
+    color: #fff;
+    cursor: pointer;
+}
+.select-color{
+    background-color: #343434;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.select-color button{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ddd;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.color1{
+    background-color: #3498db;
+}
+.color2{
+    background-color: #8e44ad;
+}
+.color3{
+    background-color: #1cb65d;
+}
+.color4{
+    background-color: #ff1756;
+}
+.color5{
+    background-color: #f4b932;
+}
